@@ -43,6 +43,11 @@ boolean robotReady = false;
 
 String robotName = "BioBuzz";
 
+-long: stores numbers that exceed standard capacity of 'int'
+
+long worldPopulation = 8100000000L;
+System.out.println("The world population is: " + worldPopulation);
+
 ## 3. Creating and Changing Variables
 
 You can create a variable:

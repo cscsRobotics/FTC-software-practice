@@ -1,0 +1,13 @@
+Practice 3
+
+Find the problem:
+
+if (power = 0.5) {
+    motor.setPower(power);
+}
+
+Why is this different from:
+
+if (power == 0.5) {
+    motor.setPower(power);
+}

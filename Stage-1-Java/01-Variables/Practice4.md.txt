@@ -1,0 +1,9 @@
+Practice 4
+
+Find the problem:
+
+int motorPower = 0.5;
+
+Why might Java reject this?
+
+What type should be used instead?

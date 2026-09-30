@@ -1,0 +1,171 @@
+# Stage 1: Java
+## 04 - Methods
+
+### Goal
+
+Learn how to create reusable blocks of code and call them when needed.
+
+---
+
+## 1. What is a method?
+
+A method is a named block of code that performs a specific task.
+
+Instead of writing the same code multiple times, you can put it inside a method and call the method whenever you need it.
+
+Example:
+
+```java
+void sayHello() {
+    System.out.println("Hello!");
+}
+
+The method does not run just because it was created.
+
+You have to call it:
+
+sayHello();
+
+
+## 2. Method Structure
+
+A basic method looks like this:
+
+returnType methodName() {
+    // code
+}
+
+Example:
+
+void driveForward() {
+    System.out.println("Driving forward");
+}
+Parts of the method
+void driveForward() {
+    System.out.println("Driving forward");
+}
+void = the method does not return a value
+driveForward = the method's name
+() = parameters go here
+{ } = contains the code that runs when the method is called
+
+##3. Calling a method
+
+Creating a method:
+
+void driveForward() {
+    System.out.println("Driving forward");
+}
+
+Calling the method:
+
+driveForward();
+
+You can call it multiple times:
+
+driveForward();
+driveForward();
+driveForward();
+
+The code inside the method runs each time it is called.
+
+## 4. Parameters
+
+A method can receive information through parameters.
+
+Example:
+
+void setPower(double power) {
+    System.out.println(power);
+}
+
+You can call it with:
+
+setPower(0.5);
+
+Here:
+
+power = 0.5
+
+You can also call:
+
+setPower(1.0);
+
+Now:
+
+power = 1.0
+
+The value passed into the method is called an argument.
+
+The variable inside the method's parentheses is called a parameter.
+
+## 5. Multiple parameters
+
+A method can have more than one parameter.
+
+void drive(double leftPower, double rightPower) {
+    System.out.println(leftPower);
+    System.out.println(rightPower);
+}
+
+Call it with:
+
+drive(0.5, 0.5);
+
+Now:
+
+leftPower = 0.5
+rightPower = 0.5
+
+## 6. Returning a value
+
+A method does not always have to be void.
+
+It can return a value.
+
+Example:
+
+int add(int a, int b) {
+    return a + b;
+}
+
+You can store the returned value:
+
+int result = add(3, 4);
+
+Now:
+
+result = 7
+
+The return statement sends the result back to wherever the method was called.
+
+## 7. Methods in FTC
+
+Methods are useful for organizing robot actions.
+
+For example:
+
+void openClaw() {
+    claw.setPosition(1.0);
+}
+
+Then instead of repeatedly writing:
+
+claw.setPosition(1.0);
+
+you can simply write:
+
+openClaw();
+
+Another example:
+
+void setDrivePower(double left, double right) {
+    leftMotor.setPower(left);
+    rightMotor.setPower(right);
+}
+
+Then:
+
+setDrivePower(0.5, 0.5);
+
+This sets both motors to 0.5.

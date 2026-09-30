@@ -1,0 +1,10 @@
+Practice 2
+
+What will this print?
+
+void printNumber() {
+    System.out.println(5);
+}
+
+printNumber();
+printNumber();

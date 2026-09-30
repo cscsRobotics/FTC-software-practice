@@ -1,0 +1,11 @@
+Practice 3
+
+What is the parameter in this method?
+
+void setPower(double power) {
+    motor.setPower(power);
+}
+
+What happens when this is called?
+
+setPower(0.75);

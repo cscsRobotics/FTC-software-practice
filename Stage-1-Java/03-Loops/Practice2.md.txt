@@ -1,0 +1,11 @@
+Practice 2
+
+What is wrong with this code?
+
+int x = 0;
+
+while (x < 3) {
+    System.out.println(x);
+}
+
+Explain why the loop does not stop.

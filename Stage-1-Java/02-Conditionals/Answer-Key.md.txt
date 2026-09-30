@@ -16,7 +16,8 @@ Explain why.
 
 -ANSWER-
 
-//Motor running will be printed because the variable power is currently 0.5 and "Motor is running" will only be printed if power > 0.3.
+//Motor running will be printed because the variable power is 
+//currently 0.5 and "Motor is running" will only be printed if power > 0.3.
 
 
 ## Practice 2
@@ -83,7 +84,8 @@ Explain why.
 
 -ANSWER-
 
-//"Turning more than driving" is printed since the value for drive is 0.5, and the value for turn is 1.0. since turn > drive, the first text is printed.
+//"Turning more than driving" is printed since the value for drive is 0.5, 
+//and the value for turn is 1.0. since turn > drive, the first text is printed.
 
 
 ## Practice 5
@@ -106,7 +108,9 @@ while (opModeIsActive()) {
 
 -ANSWER-
 
-//because the claw.setPosition(0.5) instantly overwrites the conditional, the conditional appears to do nothing. You must put an else statement so that the claw only returns to 0.5 when the button is not being pressed.
+//because the claw.setPosition(0.5) instantly overwrites the conditional, 
+//the conditional appears to do nothing. 
+//You must put an else statement so that the claw only returns to 0.5 when the button is not being pressed.
 
 
 ## Challenge

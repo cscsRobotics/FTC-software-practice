@@ -1,0 +1,176 @@
+## DO NOT OPEN UNTIL YOU HAVE COMPLETED ALL PRACTICES PRIOR ##
+
+## Practice 1
+
+What does this method do?
+
+void greet() {
+    System.out.println("Hello");
+}
+
+Does "Hello" print when the method is created, or only when it is called?
+
+-ANSWER-
+
+//The method needs to be called in order for it to show up on the console.
+//you cannot simply create a method and expect it to print automatically; you need to call the method in order for it to run.
+
+## Practice 2
+
+What will this print?
+
+void printNumber() {
+    System.out.println(5);
+}
+
+printNumber();
+printNumber();
+
+-ANSWER-
+
+//5
+//5
+//The reason that 5 is printed twice is because you called the method printNumber() two times, and the 5 is an integer literal. 
+
+## Practice 3
+
+What is parameter in this method?
+
+void setPower(double power) {
+    motor.setPower(power);
+}
+
+What happens when this is called?
+
+setPower(0.75);
+
+-ANSWER-
+
+//The parameter is power
+//when it is called the parameter power becomes 0.75 because the argument of power is 0.75
+
+## Practice 4
+
+What are the two parameters?
+
+void drive(double leftPower, double rightPower) {
+    leftMotor.setPower(leftPower);
+    rightMotor.setPower(rightPower);
+}
+
+What values do they receive when this is called?
+
+drive(0.5, -0.5);
+
+-ANSWER-
+
+//The parameters are leftPower and rightPower
+//leftPower receives the value of 0.5 and rightPower receives the value of -0.5 because the arguments correspond to the parameters.
+
+## Practice 5
+
+What does this method return?
+
+int multiply(int a, int b) {
+    return a * b;
+}
+
+What will result contain?
+
+int result = multiply(4, 3);
+
+-ANSWER-
+
+//The result will be 12 because the method multiplies a and b
+//4 * 3 = a * b = 12
+
+## Practice 6 - FTC
+
+Instead of writing:
+
+claw.setPosition(1.0);
+
+every time you want to open the claw, write a method called:
+
+openClaw
+
+The method should set the claw to position 1.0.
+
+Then show how you would call the method.
+
+-ANSWER-
+
+void openClaw(double position) {
+
+claw.setPosition(position);
+
+}
+
+openClaw(1.0);
+
+## Practice 7 - FTC
+
+Create a method called:
+
+setDrivePower
+
+It should accept two double parameters:
+
+left motor power
+right motor power
+
+Then set the corresponding motors to those values.
+
+Example call:
+
+setDrivePower(0.5, 0.5);
+
+-ANSWER- 
+
+void setDrivePower (double leftMotorPower, double rightMotorPower) {
+
+leftMotor.setPower(leftMotorPower);
+rightMotor.setPower(rightMotorPower):
+
+}
+
+
+## Challenge
+
+Create a method called:
+
+driveForward
+
+that accepts one double parameter called power.
+
+The method should set both drive motors to that power.
+
+Then write a call that makes both motors run at 0.6 power.
+
+-ANSWER-
+
+void driveForward(double power) {
+
+leftMotor.setPower(power);
+rightMotor.setPower(power);
+
+}
+
+driveForward(0.6);
+
+______________________________________
+
+Before moving on
+
+You should be able to:
+
+-Explain what a method is
+-Create a method
+-Call a method
+-Understand void
+-Understand parameters
+-Pass arguments into a method
+-Use multiple parameters
+-Understand return
+-Create simple FTC methods
+-Explain why methods can make robot code easier to organize

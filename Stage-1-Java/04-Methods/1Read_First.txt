@@ -49,7 +49,7 @@ driveForward = the method's name
 () = parameters go here
 { } = contains the code that runs when the method is called
 
-##3. Calling a method
+## 3. Calling a method
 
 Creating a method:
 
@@ -98,6 +98,21 @@ power = 1.0
 The value passed into the method is called an argument.
 
 The variable inside the method's parentheses is called a parameter.
+
+A method with no parameters runs a fixed block of code without needing any input values.
+
+An integer literal would look like this:
+
+void print5() {
+System.out.println(5); 
+
+}
+
+print5();
+
+here are no parameters, so the method requires no arguments when it is called. 
+
+And if you call the method, it will always print the number 5.
 
 ## 5. Multiple parameters
 

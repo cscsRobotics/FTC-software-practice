@@ -76,7 +76,8 @@ What type should be used instead?
 
 -ANSWER-
 
-//Java may reject variable type because it is incorrect syntax; must be a double or float to hold a decimal value
+//Java may reject variable type because it is incorrect syntax
+//must be a double or float to hold a decimal value
 
 
 ## Challenge

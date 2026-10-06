@@ -3,33 +3,33 @@
 ## Practice 1
 
 What will happen?
-
+```java
 double power = 0.5;
 
 if (power > 0.3) {
     System.out.println("Motor is running");
 }
-
+```
 Will "Motor is running" be printed?
 
 Explain why.
 
 -ANSWER-
-
+```java
 //Motor running will be printed because the variable power is 
 //currently 0.5 and "Motor is running" will only be printed if power > 0.3.
 
-
+```
 ## Practice 2
 
 What does this code do
-
+```java
 if (gamepad1.a) {
     claw.setPosition(1.0);
 } else if (gamepad1.b) {
     claw.setPosition(0.0);
 }
-
+```
 Answer:
 
 1. What happens when A is pressed?
@@ -38,37 +38,37 @@ Answer:
 4. What happens if both are pressed?
 
 -ANSWER-
-
+```java
 //When A is pressed, claw is set to position 1.0.
 //When B is pressed, claw is set to position 0.0.
 //When neither is pressed, nothing happens and claw remains in current position
 //When both are pressed, the claw is set to 1.0. This happens because the if (gamepad1.a) condition is checked first; since it evaluates to true, the program executes its block and completely skips the else if (gamepad1.b) block
-
+```
 
 ## Practice 3
 
 Find the problem:
-
+```java
 if (power = 0.5) {
     motor.setPower(power);
 }
-
+```
 Why is this different from:
-
+```java
 if (power == 0.5) {
     motor.setPower(power);
 }
-
+```
 -ANSWER-
-
+```java
 //power = 0.5 sets power to equal 0.5
 //power == 0.5 checks to see if power is equal to 0.5
-
+```
 
 ## Practice 4
 
 Predict the result:
-
+```java
 double drive = 0.5;
 double turn = 1.0;
 
@@ -77,27 +77,27 @@ if (turn > drive) {
 } else {
     System.out.println("Driving more than turning");
 }
-
+```
 Which message is printed?
 
 Explain why.
 
 -ANSWER-
-
+```java
 //"Turning more than driving" is printed since the value for drive is 0.5, 
 //and the value for turn is 1.0. since turn > drive, the first text is printed.
-
+```
 
 ## Practice 5
 
 What is wrong with this code?
-
+```java
 if (gamepad1.a) {
     claw.setPosition(1.0);
 }
 
 claw.setPosition(0.5);
-
+```
 Remember that FTC OpModes often contain loops.
 
 Explain what could happen if this code is inside:
@@ -107,11 +107,11 @@ while (opModeIsActive()) {
 ...
 
 -ANSWER-
-
+```java
 //because the claw.setPosition(0.5) instantly overwrites the conditional, 
 //the conditional appears to do nothing. 
 //You must put an else statement so that the claw only returns to 0.5 when the button is not being pressed.
-
+```
 
 ## Challenge
 
@@ -124,7 +124,7 @@ If neither is pressed, do nothing
 Do not use an unnecessary command for the third case.
 
 -ANSWER-
-
+```java
 if (gamepad1.a) {
 
 claw.setPosition(1.0); 
@@ -136,3 +136,4 @@ else if (gamepad1.b) {
 claw.setPosition(0.0); 
 
 }
+```

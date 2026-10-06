@@ -3,37 +3,37 @@
 ## Practice 1
 
 What will this print?
-
+```java
 int x = 0;
 
 while (x < 3) {
     System.out.println(x);
     x++;
 }
-
+```        
 Write the output in order.
 
 -ANSWER-
-
+```java
 // 0
 // 1
 // 2
-
+```
 
 ## Practice 2
 
 What is wrong with this code?
-
+```java
 int x = 0;
 
 while (x < 3) {
     System.out.println(x);
 }
-
+```
 Explain why the loop does not stop.
 
 -ANSWER-
-
+```java
 //x does not change. It will remain 0 forever because the code lacks 
 an update statement to change the value of x. 
 //It will look like this:
@@ -41,45 +41,45 @@ an update statement to change the value of x.
 //0
 //0
 ...
-
+```
 ## Practice 3
 
 Predict the output:
-
+```java
 int x = 5;
 
 while (x > 0) {
     System.out.println(x);
     x--;
 }
-
+```
 -ANSWER-
-
+```java
 //5
 //4
 //3
 //2
 //1
-
+```
 ## Practice 4
 
 How many times does this loop run?
-
+```java
 int x = 0;
 
 while (x < 10) {
     x++;
 }
-
+```
 -ANSWER-
-
+```java
 //the loop runs 10 times. 
 
-
+```
 ## Practice 5
 
 What happens here?
-
+```java
 int x = 0;
 
 while (x < 5) {
@@ -90,17 +90,18 @@ while (x < 5) {
 
     x++;
 }
-
+```
 What gets printed?
 
 -ANSWER-
+```java
 //"Two" when x = 2 after 2 iterations
 
-
+```
 ## Practice 6 - FTC
 
 Consider:
-
+```java
 while (opModeIsActive()) {
 
     if (gamepad1.a) {
@@ -112,7 +113,7 @@ while (opModeIsActive()) {
     }
 
 }
-
+```
 Answer:
 
 1. Why is the while loop useful here?
@@ -122,13 +123,13 @@ Answer:
 5. Why would this be better than checking the buttons only once?
 
 -ANSWER-
-
+```java
 //1. The if statements will only run once and then the program will stop. The while statement allows for the statements to be checked as long as the loop is active. 
 //2. The program is repeatedly checking whether opModeIsActive() is true, and whether A or B on gamepad1 is being pressed. 
 //3. If A is pressed, the claw moves to its maximum position limit.
 //4. If B is pressed, the claw moves to its minimum position limit. 
 //5. it is better than checking the buttons only once because throughout the program somebody may press the buttons more than one time during the while loop, and the if statements allow you to press the buttons infinitely many times only while opModeIsActive is true.
-
+```
 
 ## Challenge 
 
@@ -144,7 +145,7 @@ Write a loop that prints the numbers:
 Do not write six separate System.out.println() statements.
 
 -ANSWER-
-
+```java
 
 int x = 10;
 
@@ -156,3 +157,4 @@ x--;
 
 }
 
+```

@@ -2,7 +2,9 @@ Practice 4
 
 Find the problem:
 
+```java
 int motorPower = 0.5;
+```
 
 Why might Java reject this?
 

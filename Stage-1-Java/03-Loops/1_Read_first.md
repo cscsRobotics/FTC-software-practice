@@ -19,28 +19,28 @@ For example:
 while (opModeIsActive()) {
     // code here repeats
 }
-
+```
 As long as opModeIsActive() is true, the code inside the { } keeps running.
 
 ## 2. While loops
 
 The basic structure is:
-
+```java
 while (condition) {
     // repeated code
 }
-
+```
 The condition is checked before each repetition.
 
 Example:
-
+```java
 int count = 0;
 
 while (count < 5) {
     System.out.println(count);
     count++;
 }
-
+```
 The output is:
 
 0
@@ -57,13 +57,13 @@ Once count becomes 5, count < 5 is false, so the loop stops.
 Be careful with loops.
 
 This:
-
+```java
 int count = 0;
 
 while (count < 5) {
     System.out.println(count);
 }
-
+```
 never changes count.
 
 Therefore count < 5 remains true forever.
@@ -77,7 +77,7 @@ count++;
 allows the condition to eventually become false.
 
 ## 4. Incrementing and decrementing
-
+```java
 count++;
 
 means:
@@ -91,23 +91,23 @@ count--;
 means:
 
 count = count - 1;
-
+```
 Example:
-
+```java
 int count = 3;
 
 count++;
-
+```
 Now count is 4.
 
 ## 5. FTC While loops
 
 You will frequently see:
-
+```java
 while (opModeIsActive()) {
     
 }
-
+```
 This is useful because the robot needs to repeatedly check inputs and control hardware while the OpMode is running.
 
 For example:

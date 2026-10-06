@@ -1,7 +1,7 @@
 Practice 4
 
 What are the two parameters?
-
+```java
 void drive(double leftPower, double rightPower) {
     leftMotor.setPower(leftPower);
     rightMotor.setPower(rightPower);
@@ -10,3 +10,4 @@ void drive(double leftPower, double rightPower) {
 What values do they receive when this is called?
 
 drive(0.5, -0.5);
+```

@@ -1,7 +1,7 @@
 Practice 6 - FTC
 
 Consider:
-
+```java
 while (opModeIsActive()) {
 
     if (gamepad1.a) {
@@ -13,7 +13,7 @@ while (opModeIsActive()) {
     }
 
 }
-
+```
 Answer:
 
 1. Why is the while loop useful here?

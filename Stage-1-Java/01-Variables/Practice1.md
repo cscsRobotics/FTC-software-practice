@@ -2,9 +2,6 @@ Practice 1
 
 Create variables for:
 
-The robot's name
-The number of motors
-Motor power
-Whether the claw is open
+The robot's name, The number of motors, Motor power, Whether the claw is open
 
 Choose an appropriate type for each variable.

@@ -1,13 +1,13 @@
 Practice 1
 
 What will happen?
-
+```java
 double power = 0.5;
 
 if (power > 0.3) {
     System.out.println("Motor is running");
 }
-
+```
 Will "Motor is running" be printed?
 
 Explain why.

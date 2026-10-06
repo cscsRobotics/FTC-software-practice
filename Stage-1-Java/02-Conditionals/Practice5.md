@@ -1,17 +1,17 @@
 Practice 5
 
 What is wrong with this code?
-
+```java
 if (gamepad1.a) {
     claw.setPosition(1.0);
 }
 
 claw.setPosition(0.5);
-
+```
 Remember that FTC OpModes often contain loops.
 
 Explain what could happen if this code is inside:
-
+```java
 while (opModeIsActive()) {
 
 ...

@@ -3,103 +3,103 @@
 ## Practice 1
 
 What does this method do?
-
+```java
 void greet() {
     System.out.println("Hello");
 }
-
+```
 Does "Hello" print when the method is created, or only when it is called?
 
 -ANSWER-
-
+```java
 //The method needs to be called in order for it to show up on the console.
 //you cannot simply create a method and expect it to print automatically; you need to call the method in order for it to run.
-
+```
 ## Practice 2
 
 What will this print?
-
+```java
 void printNumber() {
     System.out.println(5);
 }
 
 printNumber();
 printNumber();
-
+```
 -ANSWER-
-
+```java
 //5
 //5
 //The reason that 5 is printed twice is because you called the method printNumber() two times, and the 5 is an integer literal. 
-
+```
 ## Practice 3
 
 What is parameter in this method?
-
+```java
 void setPower(double power) {
     motor.setPower(power);
 }
-
+```
 What happens when this is called?
-
+```java
 setPower(0.75);
-
+```
 -ANSWER-
-
+```java
 //The parameter is power
 //when it is called the parameter power becomes 0.75 because the argument of power is 0.75
-
+```
 ## Practice 4
 
 What are the two parameters?
-
+```java
 void drive(double leftPower, double rightPower) {
     leftMotor.setPower(leftPower);
     rightMotor.setPower(rightPower);
 }
-
+```
 What values do they receive when this is called?
-
+```java
 drive(0.5, -0.5);
-
+```
 -ANSWER-
-
+```java
 //The parameters are leftPower and rightPower
 //leftPower receives the value of 0.5 and rightPower receives the value of -0.5 because the arguments correspond to the parameters.
-
+```
 ## Practice 5
 
 What does this method return?
-
+```java
 int multiply(int a, int b) {
     return a * b;
 }
-
+```
 What will result contain?
-
+```java
 int result = multiply(4, 3);
-
+```
 -ANSWER-
-
+```java
 //The result will be 12 because the method multiplies a and b
 //4 * 3 = a * b = 12
-
+```
 ## Practice 6 - FTC
 
 Instead of writing:
-
+```java
 claw.setPosition(1.0);
-
+```
 every time you want to open the claw, write a method called:
-
-openClaw
-
+```java
+openClaw()
+```
 The method should set the claw to position 1.0.
 
 Then show how you would call the method.
 
 -ANSWER-
-
+```java
 void openClaw(double position) {
 
 claw.setPosition(position);
@@ -107,40 +107,40 @@ claw.setPosition(position);
 }
 
 openClaw(1.0);
-
+```
 ## Practice 7 - FTC
 
 Create a method called:
-
-setDrivePower
-
+```java
+setDrivePower()
+```
 It should accept two double parameters:
-
+```java
 left motor power
 right motor power
-
+```
 Then set the corresponding motors to those values.
 
 Example call:
-
+```java
 setDrivePower(0.5, 0.5);
-
+```
 -ANSWER- 
-
+```java
 void setDrivePower (double leftMotorPower, double rightMotorPower) {
 
 leftMotor.setPower(leftMotorPower);
 rightMotor.setPower(rightMotorPower):
 
 }
-
+```
 
 ## Challenge
 
 Create a method called:
-
-driveForward
-
+```java
+driveForward()
+```
 that accepts one double parameter called power.
 
 The method should set both drive motors to that power.
@@ -148,7 +148,7 @@ The method should set both drive motors to that power.
 Then write a call that makes both motors run at 0.6 power.
 
 -ANSWER-
-
+```java
 void driveForward(double power) {
 
 leftMotor.setPower(power);
@@ -157,7 +157,7 @@ rightMotor.setPower(power);
 }
 
 driveForward(0.6);
-
+```
 ______________________________________
 
 Before moving on

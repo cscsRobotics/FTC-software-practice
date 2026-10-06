@@ -1,9 +1,9 @@
 Challenge
 
 Create a method called:
-
-driveForward
-
+```java
+driveForward()
+```
 that accepts one double parameter called power.
 
 The method should set both drive motors to that power.

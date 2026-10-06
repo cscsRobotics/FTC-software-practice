@@ -21,11 +21,11 @@ You should be able to:
 -Predict which branch of a conditional will run
 -Understand that code outside a conditional still runs
 -Read simple FTC button logic
-
-##if (gamepad1.a) {
+```java
+if (gamepad1.a) {
     ...
 }
-
+```
 doesn't magically mean "do this and nothing else."
 
 It only controls the code inside its braces.

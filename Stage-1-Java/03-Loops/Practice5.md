@@ -1,7 +1,7 @@
 Practice 5
 
 What happens here?
-
+```java
 int x = 0;
 
 while (x < 5) {
@@ -12,5 +12,5 @@ while (x < 5) {
 
     x++;
 }
-
+```
 What gets printed?

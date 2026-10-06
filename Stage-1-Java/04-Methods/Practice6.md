@@ -1,9 +1,9 @@
 Practice 6 - FTC
 
 Instead of writing:
-
+```java
 claw.setPosition(1.0);
-
+```
 every time you want to open the claw, write a method called:
 
 openClaw

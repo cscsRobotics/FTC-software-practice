@@ -20,7 +20,7 @@
 5. When robot2.drive() is called, "PracticeBot is driving" is printed.
 6. If robot1.name changes to "Alpha" then robot2.name does not change. The objects have different instances; therefore, changing one field of one object does not affect the other object.
 7. class Robot { ... }
-8. ```java Robot robot1 = new Robot(); and Robot robot2 = new Robot() ```
+8. ```java Robot robot1 = new Robot(); and Robot robot2 = new Robot(); ```
 
 
 # Practice 2

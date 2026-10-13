@@ -14,13 +14,13 @@
 -ANSWER-
 
 1. There are two new objects created from the Robot class
-2. The value of robot1.name is Biobuzz
+2. The value of robot1.name is BioBuzz
 3. The value of robot2.power is 0.4
 4. When robot1.drive() is called, "BioBuzz is driving" is printed.
 5. When robot2.drive() is called, "PracticeBot is driving" is printed.
 6. If robot1.name changes to "Alpha" then robot2.name does not change. The objects have different instances; therefore, changing one field of one object does not affect the other object.
 7. class Robot { ... }
-8. ```java Robot robot1 = new Robot(); and Robot robot2 = new Robot ```
+8. ```java Robot robot1 = new Robot(); and Robot robot2 = new Robot() ```
 
 
 # Practice 2
@@ -39,9 +39,9 @@
 2. 0.7
 3. 0.8
 4. for robot1.showStatus(); "Alpha has power 0.7" gets printed. for robot2.showStatus(); "Beta has power 0.8" gets printed
-5. power = newPower in the method for setPower, so when the parameter newPower has an argument of some number, it temporarily has that value whilst power retains that value until it is changed.
+5. newPower is a parameter that temporarily holds the argument passed to setPower(). The statement power = newPower; copies that value into the object's power field, which retains it until something changes it.
 6. If robot1.boost(0.5) is called, it does not affect robot2.power because they are separate objects.
-7. The parameter amount is a temporary value used by the method to apply the argument to the field power (so that power has a new value)
+7. amount is a parameter holding the value passed to boost(). The field power stores the robot's current power. The method uses amount to calculate the updated power.
 
 
 # Practice 3
@@ -60,7 +60,7 @@
 3. 80
 4. robot1 complete output is "Alpha: 80" and robot2 complete output is "Beta: 70"
 5. They are two separate objects; therefore, changes applied in one object will not affect the other.
-6. all fields belong to each object because they are both instances made from the same Robot class. 
+6. Each Robot object has its own name and battery fields. Both objects get these fields from the same class definition, but each object stores its own values.
 
 
 # Practice 4
@@ -111,4 +111,4 @@
 6. Print both objects' statuses.
 7. Explain why the two objects can have different field values even though they come from the same class.
 
-Well it's all up to you. The answer can vary. 
+Well it's all up to you. The answer can vary. Check that the student creates two Robot objects, assigns each its own values, calls the appropriate methods, prints both statuses, and explains that each object maintains its own instance-field values.
